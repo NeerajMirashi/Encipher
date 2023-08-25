@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encipher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- introduction -->
+    <div class = "introduction">
+        <h1>Encode and decode securely.</h1>
+        <p><b>Safeguard</b> your communication through message encryption and decryption. Encipher offers a versatile platform for secure communication through a range of encryption methods including Caesar, Playfair, AES, and more. Users can effortlessly encrypt and decrypt their messages, ensuring confidentiality. From classical ciphers like monoalphabetic to modern AES and DES, Encipher empowers users with diverse encryption techniques for their privacy needs.</p>
+    </div>
+    
+<!-- Caeser Cipher -->
+<div class = "ceaser">
+        <h2>Caesar Cipher Encryption</h2>
+        <p>Caesar Cipher operates by shifting each letter of the text by a fixed number of positions down the alphabet. This simple substitution method offers basic encryption. For instance, with a shift of 3, 'A' becomes 'D', 'B' becomes 'E', and so on. Decryption involves reversing the shift. It's a rudimentary method with a fixed key, susceptible to brute-force attacks.</p>
+        <!-- Encryption -->
+        <label for="plainText">Enter the plain text: </label>
+        <input type="text" id="plainText"><br>
+        <label for="key">Enter the key (a number): </label>
+        <input type="number" id="key"><br>
+        <button id="encryptButton">Encrypt</button>
+        <p id="encryptedText"></p>
+        <!-- Decryption -->
+        <h2>Caesar Cipher Decryption</h2>
+        <label for="cipherText">Enter the Cipher text: </label>
+        <input type="text" id="cipherText"><br>
+        <label for="cipherKey">Enter the key (a number): </label>
+        <input type="number" id="cipherKey"><br>
+        <button id="decryptButton">Decrypt</button>
+        <p id="decryptText"></p>
+
+    </div>
+
+<!-- Monoalphabetic cipher -->
+    <div class = "monoalphabetic">
+        <h2>Monoalphabetic Cipher Encryption</h2>
+        <p>Monoalphabetic Cipher: Replace each letter with another for encryption. This substitution uses a fixed mapping, such as 'A' to 'Q', 'B' to 'Z'. While it's simple, this method can be vulnerable to frequency analysis due to consistent letter substitutions. Decryption involves reversing the mapping. It's a basic technique, but lacks strong security against modern cryptanalysis methods.</p>
+        <!-- Encryption -->
+        <label for="plainText1">Enter the plain text: </label>
+        <input type="text" id="plainText1"><br>
+        <button id="encryptButton1">Encrypt</button>
+        <p id="encryptedText1"></p>
+        <!-- Decryption -->
+        <h2>Monoalphabetic Cipher Decryption</h2>
+        <label for="cipherText1">Enter the plain text: </label>
+        <input type="text" id="cipherText1"><br>
+        <button id="decryptButton1">Decrypt</button>
+        <p id="decryptedText1"></p>
+
+    </div>
+
+<!-- Rail Fence Cipher -->
+    <div class = "railFence">
+        <h2>Rail Fence Cipher Encryption</h2>
+        <p>Rail Fence Cipher: Encrypt by writing letters in a zigzag pattern along "rails". Reassemble by reading along the rails. It's simple but can hide messages effectively. Security depends on the number of rails chosen. However, for longer messages, it's susceptible to frequency analysis. It's a basic method with limited security against advanced techniques.</p>
+        <!-- Encryption -->
+        <label for="plainText3">Enter the plain text: </label>
+        <input type="text" id="plainText3"><br>
+        <label for="key3">Enter the number of rails: </label>
+        <input type="number" id="key3"><br>
+        <button id="encryptButton3">Encrypt</button>
+        <p id="encryptedText3"></p>
+        <!-- Decryption -->
+        <h2>Rail Fence Cipher Decryption</h2>
+        <label for="cipherText2">Enter the Cipher text: </label>
+        <input type="text" id="cipherText2"><br>
+        <label for="rails">Enter the number of rails: </label>
+        <input type="number" id="rails"><br>
+        <button id="decryptButton2">Decrypt</button>
+        <p id="decryptedText"></p>
+
+    <script src="index.js"></script>
+</body>
+</html>
