@@ -85,7 +85,7 @@ button:hover {
 /* Result paragraph */
 p#encryptedText, p#encryptedText1, p#encryptedText3 {
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 8px;
     background-color: #d6d4d4;
     padding: 2px;
     border-radius: 4px;
