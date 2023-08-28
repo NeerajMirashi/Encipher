@@ -83,9 +83,9 @@ button:hover {
 }
 
 /* Result paragraph */
-p#encryptedText, p#encryptedText1, p#encryptedText3, p#decryptText, p#decryptedText1, p#decryptedText2 {
+p#encryptedText, p#encryptedText1, p#encryptedText3, p#decryptText, p#decryptedText1, p#decryptedText {
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 0px;
     background-color: #d6d4d4;
     padding: 2px;
     border-radius: 4px;
